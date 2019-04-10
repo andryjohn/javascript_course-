@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Les opérateurs logique en Javascript</title>
+</head>
+<body>
+	<h1>Les opérateurs logoqique en Javascript</h1>
+	
+
+/*l’opérateur logique « ET » va nous permettre de créer un intervalle de comparaison pour une variable.*/
+	<script> 
+		 var heure = 9;
+            
+            if (heure >= 0 && heure < 12 == true) {
+                alert("C'est le matin")
+            }
+            else if (heure === 12 == true) {
+                alert("Il est midi pile")
+            }
+            else if (heure > 12 && heure <= 24 == true) {
+                alert("C'est le soir")
+            }
+            else {
+                alert("La valeur entré ne semble pas valide")
+            }
+
+</script>
+																					<!--L’opérateur « OU » va nous permettre de comparer la valeur d’une variable à deux valeurs différentes. -->
+
+
+<script>
+	 var heure = 26;
+            
+            if (heure < 0 || heure > 24 == true) {
+                alert("L'heure est invalide !")
+            }
+            else {
+                alert("L'heure semble valide");
+            }
+	
+
+
+</script>
+																							<!--Finalement, l’opérateur logique « NON » va nous permettre de nier une comparaison. 
+																							Ainsi, des comparaisons évaluées de base à false vont être évaluées à true et inversement.-->
+<script>
+	 var heure = 18;
+            
+            /*L'opérateur logique "!" inverse la valeur logique
+             *d'un test. Ici, cela correspond à écrire :
+             *if(heure > 16 == true)*/
+            if (!(heure <= 16) == true) {
+                alert("Il est plus de 16h")
+            }
+            else {
+                alert("Il est moins de 16h");
+            }
+
+
+</script>					
+
+
+	
+</body>
+</html>

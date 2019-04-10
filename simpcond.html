@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>simplification des conditions</title>
+</head>
+<body>
+		<h1>Simplification des conditions en Javascript</h1>
+<!--Il y a un autre point que vous devez connaître afin de véritablement comprendre les conditions : une valeur peut être évaluée à true ou false même sans opérateur de comparaison.-->
+
+<!--Ainsi, toute valeur différente de null, undefined, NaN, 0 et la chaîne de caractères vide sera évaluée par défaut par le JavaScript à true.-->
+
+	<script>
+	 var x = 6, y = "";
+            
+            //Correspond à if(x == true)
+            if (x) {
+                alert("x est évaluée à true par le JavaScript");
+            }
+            
+           if (y){
+                alert("y est évaluée à true")
+            }										 						/*le javascript vas evaluer une chaine de caractère vide a false*/
+            else{
+                alert("y est évaluée à false");
+            }
+    </script>
+	
+</body>
+</html>

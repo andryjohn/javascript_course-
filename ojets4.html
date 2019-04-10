@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>les objets en javascript</title>
+</head>
+<body>
+	<h1>les objet:la methode CharAt</h1>
+	<script>
+		 //On travaille avec des valeurs primitives
+            var texte = "J'apprends le JAVASCRIPT";
+            
+            //Le premier caractère possède la position 0
+            var pos0 = texte.charAt(0);
+            var pos3 = texte.charAt(3);
+            var pos11 = texte.charAt(11);
+            
+            alert('Position 0 : ' + pos0 +
+                  '\n\nPosition 3 : ' + pos3 +
+                  '\n\nPosition 11 : ' + pos11)
+      </script>
+    
+    <script> 
+
+
+     //On travaille avec des valeurs primitives
+            var texte = "J'apprends le JAVASCRIPT";
+            
+            var premiere = texte.indexOf('p');
+            var derniere = texte.lastIndexOf('p');
+            var sequence = texte.indexOf('le');
+            
+            alert('Premier "p" trouvé en position : ' + premiere +
+                  '\n\nDernier "p" trouvé en position : ' + derniere +
+                  '\n\nPremier "le" trouvé en position : ' + sequence);
+
+    	
+
+
+    </script>
+	
+</body>
+</html>
